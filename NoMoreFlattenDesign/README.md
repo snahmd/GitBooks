@@ -12,4 +12,3 @@
 
 `python manage.py startapp stock`
 
-#### 1. [create models](create-models.md)
