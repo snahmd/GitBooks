@@ -1,5 +1,13 @@
 # 🏗️ Create Models
 
+## Start Right From Here
+
+`git clone git@github.com:snahmd/NoMoreFlattenDesign.git`
+
+`git checkout bfa113d3597a921f9c3bf8e4a11fca069a366f35`
+
+***
+
 {% code title="stock/models.py" %}
 ```python
 from django.db import models
