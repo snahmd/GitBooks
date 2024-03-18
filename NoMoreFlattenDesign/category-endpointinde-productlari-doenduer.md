@@ -16,7 +16,43 @@
 
 ### Sonrası:
 
+```json
+[
+    {
+        "id": 1,
+        "name": "Clothing",
+        "product_count": 2,
+        "products": [
+            {
+                "id": 1,
+                "created": "2024-03-18T13:30:21.992575Z",
+                "updated": "2024-03-18T13:31:32.189458Z",
+                "name": "flex",
+                "stock": 2,
+                "category": 1,
+                "brand": 1
+            }
+        ]
+    }
+]
+```
 
+{% code title="stock/serializers.py" %}
+```python
+class ProductSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = '__all__'
+
+class CategorySerializer(serializers.ModelSerializer):
+    product_count = serializers.SerializerMethodField()
+    products = ProductSerializer(many=True, read_only=True)
+    class Meta:
+        model = Category
+        fields = ['id', 'name', 'product_count', 'products']
+#..
+```
+{% endcode %}
 
 ## Başlangıç noktası
 
