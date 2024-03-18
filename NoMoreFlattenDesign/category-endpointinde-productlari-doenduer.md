@@ -12,7 +12,15 @@
 
 ### Öncesi:
 
-
+```
+[
+    {
+        "id": 1,
+        "name": "Clothing",
+        "product_count": 2,
+    }
+]
+```
 
 ### Sonrası:
 
@@ -37,6 +45,16 @@
 ]
 ```
 
+## Başlangıç noktası
+
+`git clone git@github.com:snahmd/NoMoreFlattenDesign.git`
+
+`git checkout 66fb8cb2e602e7ee54d3f90539f69667082b5225`
+
+***
+
+## Yapılanlar:
+
 {% code title="stock/serializers.py" %}
 ```python
 class ProductSerializer(serializers.ModelSerializer):
@@ -53,18 +71,6 @@ class CategorySerializer(serializers.ModelSerializer):
 #..
 ```
 {% endcode %}
-
-## Başlangıç noktası
-
-`git clone git@github.com:snahmd/NoMoreFlattenDesign.git`
-
-`git checkout 66fb8cb2e602e7ee54d3f90539f69667082b5225`
-
-***
-
-## Yapılanlar:
-
-
 
 ***
 
