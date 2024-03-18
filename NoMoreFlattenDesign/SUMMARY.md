@@ -2,7 +2,7 @@
 
 * [☄️ No More Flatten](README.md)
 * [🏗️ Create Models](create-models.md)
-  * [📭 Create Abstract Class](create-abstract-class.md)
-  * [📢 Create First EndPoint](create-models/create-first-endpoint.md)
-  * [⌨️ Calculate Product Count](create-models/calculate-product-count.md)
-  * [🔍 Search and Filter](create-models/search-and-filter.md)
+* [📭 Create Abstract Class](create-abstract-class.md)
+* [📢 Create First EndPoint](create-first-endpoint.md)
+* [⌨️ Calculate Product Count](calculate-product-count.md)
+* [🔍 Search and Filter](search-and-filter.md)
