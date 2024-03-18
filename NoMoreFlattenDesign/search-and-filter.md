@@ -25,12 +25,11 @@ Arama özelliği için viewsete iki tane şey eklemeliyiz.
 {% code title="stock/views.py" %}
 ```python
 from rest_framework import viewsets, filters
-# ... [imports]
 
 class CategoryViewSet(viewsets.ModelViewSet):
-    # ... 
+    # ...
     filter_backends = [filters.SearchFilter]
-    search_fields = ['name']
+    search_fields = ["name"]
 ```
 {% endcode %}
 
@@ -56,6 +55,7 @@ INSTALLED_APPS = [
 ]
 ```
 
+{% code title="stock/views.py" %}
 ```python
 from django_filters.rest_framework import DjangoFilterBackend
 
@@ -64,3 +64,4 @@ class CategoryViewSet(viewsets.ModelViewSet):
     filter_backends = [filters.SearchFilter, DjangoFilterBackend]
     filterset_fields = ['name']
 ```
+{% endcode %}
