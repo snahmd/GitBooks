@@ -6,11 +6,11 @@
 * _<mark style="color:orange;">category\_serializer'</mark>_a yazdığın _<mark style="color:orange;">product\_serializer'</mark>_ı koy
   * Böylece _<mark style="color:purple;">Category</mark>_ endpointinde **kategoriye ait productları döndür.**
 
-### Endpoint:
+#### - Endpoint:
 
 `http://127.0.0.1:8000/stock/categories/`
 
-### Öncesi:
+#### - Öncesi:
 
 ```
 [
@@ -22,7 +22,7 @@
 ]
 ```
 
-### Sonrası:
+#### - Sonrası:
 
 ```json
 [
